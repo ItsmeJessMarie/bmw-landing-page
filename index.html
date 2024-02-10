@@ -14,14 +14,30 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/c66723084c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Boy Meets World 🌎</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Disney +</a>
+            <a class="navbar-brand" href="/"
+              ><img
+                class="disney-logo"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/259/original/disney-logo.jpg?1707322884"
+              />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -36,18 +52,23 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shows</a>
+                  <a class="nav-link" href="/">Shows</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Movies</a>
+                  <a class="nav-link" href="/">Movies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Search</a>
+                  <a class="nav-link" href="/"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/"
+                    ><i class="fa-solid fa-user"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -57,23 +78,196 @@
     </header>
     <main>
       <div class="main-container">
-        <div class="row">
-          <div class="col-md-6">
+        <section>
+          <div class="grid grid-2-columns plot-container">
             <div class="summary-container">
+              <a
+                href="https://www.disneyplus.com/series/details/30QWPKyQ9vTF"
+                class="bmw-disney-link"
+                target="_blank"
+                title="Click to watch Boy Meets World on Disney +"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/254/original/bmw-logo.png?1707322634"
+                  class="img-fluid bmw-logo"
+              /></a>
+              <div class="row specifics mt-3">
+                <div class="col ms-3"><p>1993-2000</p></div>
+                <div class="col"><p>7 Seasons</p></div>
+                <div class="col">
+                  <a
+                    href="https://www.imdb.com/title/tt0105958/"
+                    target="_blank"
+                    title="Boy Meets World IMDb page"
+                    ><p>IMDb 8.1/10</p></a
+                  >
+                </div>
+              </div>
               <p>
                 This American sitcom follows the life of Cory Matthews, a
                 regular kid, as he navigates through adolescence, school,
                 friendships, and romance with his best friend Shawn Hunter,
                 girlfriend Topanga Lawrence, and the guidance of his teacher Mr.
                 Feeny. Set in Philadelphia, the series explores themes of
-                friendship, family, love, and the challenges of growing up.
+                friendship, family, love, and the challenges of growing up. If
+                you're a 90's kid like myself, I highly recommend this show as I
+                still watch it regularly.
               </p>
             </div>
+            <div>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/839/original/boy-meets-world-cast.png?1707594779"
+                class="img-fluid bmw-cast-beginning shadow-sm"
+                title="Boy Meets World cast photo"
+              />
+            </div>
           </div>
-          <div class="col-md-6">Photos here!</div>
-        </div>
+        </section>
+        <section>
+          <div class="cast-container">
+            <h1 class="mb-3">Main cast during the series:</h1>
+            <div class="grid grid-7-columns">
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0005399/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/282/original/Ben_Savage_as_Cory_Matthews.png?1707326403"
+                    title="Ben Savage IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0004918/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/285/original/Danielle_Fishel_as_Topanga_Lawrence.png?1707326421"
+                    title="Danielle Fishel IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0835045/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/290/original/Rider_Strong_as_%E2%80%9CShawn_Hunter%E2%80%9D.png?1707326454"
+                    title="Rider Strong IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0295115/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/292/original/Will_Friedle_as_%E2%80%9CEric_Matthews%E2%80%9D.png?1707326467"
+                    title="Will Friedle IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0200122/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/293/original/William_Daniels_as_George_Feeny.png?1707326472"
+                    title="William Daniels IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0750916/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/294/original/William_Russ_as_Alan_Matthews.png?1707326477"
+                    title="William Russ IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0709808/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/283/original/Betsy_Randle_as_%E2%80%9CAmy_Matthews%E2%80%9D.png?1707326408"
+                    title="Betsy Randle IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0630091/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/315/original/Lily_Nicksay_as_young_Morgan_Matthews%E2%80%9D.png?1707339326"
+                    title="Lily Nicksay IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0725864/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/316/original/Lindsay_Ridgeway_as_Morgan_Matthews%E2%80%9D.png?1707339339"
+                    title="Lindsay Ridgeway IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0703761/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/281/original/Anthony_Tyler_Quinn_as_%E2%80%9CJonathon_Turner%E2%80%9D.png?1707326398"
+                    title="Anthony Tyler Quinn IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0635851/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/286/original/Lee_Norris_as_%E2%80%9CStuart_Minkus%E2%80%9D.png?1707326427"
+                    title="Lee Norris IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0492932/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/289/original/Matthew_Lawrence_as_%E2%80%9CJack_Hunter%E2%80%9D.png?1707326448"
+                    title="Matthew Lawrence IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0005208/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/291/original/Trina_McGee_as_%E2%80%9CAngela_Moore%E2%80%9D.png?1707326460"
+                    title="Trina McGee IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+              <div class="cast">
+                <a href="https://www.imdb.com/name/nm0005533/" target="_blank"
+                  ><img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/288/original/Maitland_Ward_as_%E2%80%9CRachel_McGuire%E2%80%9D.png?1707326441"
+                    title="Maitland Ward IMDb"
+                    class="img-fluid shadow-sm"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="grid grid-2-columns clip-quote-container">
+            <div>
+              <h2>Watch some of the funniest moments of Boy Meets World:</h2>
+              <iframe
+                src="https://www.youtube.com/embed/SqSYBz3MVog?si=W2QYihY_191i-eYq"
+                title="YouTube video player Boy Meets World funniest moments"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="youtube-video shadow-sm"
+              ></iframe>
+            </div>
+            <div>
+              <div class="quote-container">
+                <h3 id="quote" class="quote">Generating a quote...</h3>
+              </div>
+              <button id="btn-quote" class="btn shadow-sm">
+                Generate a popular Boy Meets World quote!
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
