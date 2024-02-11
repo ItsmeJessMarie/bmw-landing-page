@@ -20,6 +20,10 @@ h3 {
   font-size: 22px;
 }
 
+p {
+  font-size: 15px;
+}
+
 h1,
 h2,
 h3,
@@ -85,6 +89,7 @@ section {
 }
 
 footer {
+  margin-top: 30px;
   padding: 20px;
 }
 
@@ -95,7 +100,7 @@ footer,
 
 .grid-2-columns {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 45px;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
@@ -117,18 +122,25 @@ footer,
   align-items: center;
   grid-template-columns: repeat(7, 2fr);
   grid-gap: 10px;
-  margin: 0 auto;
 }
 
-.grid-7-columns img {
+.grid-7-columns img,
+.bmw-drawing-collage,
+.pod-meets-world img {
   max-width: 100%;
   height: auto;
   transition: all 150ms ease-in-out;
   display: block;
+  margin: 0 auto;
 }
 
 .grid-7-columns img:hover {
   transform: scale(1.2);
+}
+
+.bmw-drawing-collage:hover,
+.pod-meets-world img:hover {
+  transform: scale(1.1);
 }
 
 .youtube-video {
@@ -137,32 +149,18 @@ footer,
   width: 100%;
 }
 
-.pod-meets-world {
-  background: #fafdfd;
-  color: #000000;
-  border-radius: 8px;
-  padding: 10px 20px;
-  width: 650px;
+.pod-meets-world img {
+  display: block;
   margin: 0 auto;
 }
 
-.pod-meets-world img {
-  max-width: 100%;
-  height: auto;
-  transition: all 150ms ease-in-out;
-  display: block;
-}
-
-.pod-meets-world img:hover {
-  transform: scale(1.2);
-}
-
-.quote-container {
+.quote-container,
+.pod-meets-world {
   background: #fafdfd;
   border-radius: 8px;
   color: #000000;
-  padding: 10px 20px;
-  width: 90%;
+  padding: 12px 20px;
+  width: 75%;
   display: block;
   margin: 0 auto;
 }
@@ -204,7 +202,7 @@ footer,
   }
 
   p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   section {
@@ -256,6 +254,10 @@ footer,
     display: grid;
     width: 100%;
   }
+
+  .bmw-drawing {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -276,7 +278,7 @@ footer,
   }
 
   footer {
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   .container-fluid {
