@@ -30,7 +30,7 @@
   <body>
     <header>
       <div class="header-container">
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-dark navbar-expand-sm">
           <div class="container-fluid">
             <a class="navbar-brand" href="/"
               ><img
@@ -81,18 +81,12 @@
         <section>
           <div class="grid grid-2-columns plot-container">
             <div class="summary-container">
-              <a
-                href="https://www.disneyplus.com/series/details/30QWPKyQ9vTF"
-                class="bmw-disney-link"
-                target="_blank"
-                title="Click to watch Boy Meets World on Disney +"
-              >
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/254/original/bmw-logo.png?1707322634"
-                  class="img-fluid bmw-logo"
-              /></a>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/254/original/bmw-logo.png?1707322634"
+                class="img-fluid bmw-logo"
+              />
               <div class="row specifics mt-3">
-                <div class="col ms-3"><p>1993-2000</p></div>
+                <div class="col"><p>1993-2000</p></div>
                 <div class="col"><p>7 Seasons</p></div>
                 <div class="col">
                   <a
@@ -113,11 +107,20 @@
                 you're a 90's kid like myself, I highly recommend this show as I
                 still watch it regularly.
               </p>
+              <a
+                href="https://www.disneyplus.com/series/details/30QWPKyQ9vTF"
+                class="bmw-disney-link"
+                target="_blank"
+                title="Click to watch Boy Meets World on Disney +"
+                ><button class="btn btn-play">
+                  <i class="fa-solid fa-play me-2"></i>Play
+                </button></a
+              >
             </div>
             <div>
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/839/original/boy-meets-world-cast.png?1707594779"
-                class="img-fluid bmw-cast-beginning shadow-sm"
+                class="img-fluid boy-meets-world-cast shadow-sm"
                 title="Boy Meets World cast photo"
               />
             </div>
@@ -245,7 +248,9 @@
         <section>
           <div class="grid grid-2-columns clip-quote-container">
             <div>
-              <h2>Watch some of the funniest moments of Boy Meets World:</h2>
+              <h2 class="mb-3">
+                Watch some of the funniest moments of Boy Meets World:
+              </h2>
               <iframe
                 src="https://www.youtube.com/embed/SqSYBz3MVog?si=W2QYihY_191i-eYq"
                 title="YouTube video player Boy Meets World funniest moments"
@@ -256,18 +261,73 @@
               ></iframe>
             </div>
             <div>
+              <h2 class="text-center mt-4">
+                Boy Meets World memorable quotes:
+              </h2>
               <div class="quote-container">
                 <h3 id="quote" class="quote">Generating a quote...</h3>
               </div>
-              <button id="btn-quote" class="btn shadow-sm">
+              <button
+                id="btn-quote"
+                class="btn btn-quote shadow-sm"
+                title="Click to generate a quote"
+              >
                 Generate a popular Boy Meets World quote!
               </button>
             </div>
           </div>
+          <div class="grid grid-2-columns pod-meets-world text-center mt-5">
+            <div>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/868/original/pod_meets_world.png?1707623830"
+                title="Pod Meets World image"
+                class="img-fluid shadow-sm"
+              />
+            </div>
+            <p class="mt-4">
+              If you want even more Boy Meets World content, follow Pod Meets
+              World as Rider, Danielle, and Will revisit their most memorable
+              moments in the series. <br />
+              <a
+                href="https://www.iheart.com/podcast/1119-pod-meets-world-98589488/"
+                target="_blank"
+                title="iHeartRadio link"
+                ><button class="btn btn-pod">
+                  Listen now on iHeartRadio
+                </button></a
+              >
+            </p>
+          </div>
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="profile-links mt-4">
+        <p>
+          This project was coded with ❤️ by
+          <a
+            href="https://www.shecodes.io/graduates/77936-jessica-boll"
+            target="_blank"
+            title="SheCodes profile"
+            >Jessica Boll</a
+          >
+          and is
+          <a
+            href="https://github.com/ItsmeJessMarie/bmw-landing-page"
+            target="_blank"
+            title="GitHub link"
+            >open sourced on GitHub</a
+          >
+          and
+          <a
+            href="https://jb-boy-meets-world-lp.netlify.app/"
+            target="_blank"
+            title="Netlify link"
+            >hosted on Netlify.</a
+          >
+        </p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

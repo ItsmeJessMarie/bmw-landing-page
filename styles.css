@@ -4,16 +4,20 @@ body {
     rgb(30, 33, 48) 6.8%,
     rgb(74, 90, 110) 131%
   );
-  color: #ffffff;
+  color: #fafdfd;
   font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 h1,
@@ -33,7 +37,7 @@ p {
 }
 
 a.nav-link {
-  color: #ffffff;
+  color: #fafdfd;
 }
 
 .navbar-collapse {
@@ -43,7 +47,7 @@ a.nav-link {
 }
 
 .navbar-toggler-icon {
-  color: #ffffff;
+  color: #fafdfd;
 }
 
 li.nav-item {
@@ -55,16 +59,17 @@ li.nav-item {
 }
 
 a {
-  color: #ffffff;
+  color: #a99572;
   text-decoration: none;
 }
 
 a:hover {
-  color: #a99572;
+  color: #fafdfd;
 }
 
 .img-fluid {
   border-radius: 8px;
+  height: auto;
 }
 
 .main-container {
@@ -79,17 +84,31 @@ section {
   padding: 25px 50px;
 }
 
+footer {
+  padding: 20px;
+}
+
+footer,
+.specifics {
+  text-align: center;
+}
+
 .grid-2-columns {
   display: grid;
-  grid-gap: 48px;
+  grid-gap: 50px;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
 
-.bmw-cast-beginning {
+.bmw-logo {
+  width: 90%;
+}
+
+.boy-meets-world-cast {
   display: block;
   margin: 0 auto;
+  opacity: 0.8;
 }
 
 .grid-7-columns {
@@ -118,29 +137,57 @@ section {
   width: 100%;
 }
 
-.clip-quote-container p {
-  margin: 5px;
+.pod-meets-world {
+  background: #fafdfd;
+  color: #000000;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.pod-meets-world img {
+  max-width: 100%;
+  height: auto;
+  transition: all 150ms ease-in-out;
+  display: block;
+}
+
+.pod-meets-world img:hover {
+  transform: scale(1.2);
 }
 
 .quote-container {
-  background: #ffffff;
+  background: #fafdfd;
   border-radius: 8px;
   color: #000000;
-  padding: 10px 15px;
+  padding: 10px 20px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.quote {
+  margin: 0;
 }
 
 .btn {
   background: #a99572;
-  border-radius: 50px;
-  color: #ffffff;
+  border-radius: 8px;
+  color: #fafdfd;
   display: block;
   margin: 15px auto;
-  padding: 10px 20px;
+  padding: 12px 20px;
+  width: 250px;
 }
 
 .btn:hover {
-  background: #ffffff;
+  background: #fafdfd;
   color: #a99572;
+}
+
+.btn-play {
+  width: 200px;
 }
 
 @media (max-width: 1200px) {
@@ -152,6 +199,20 @@ section {
 }
 
 @media (max-width: 992px) {
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+
   .grid-2-columns {
     display: block;
     margin: 0 auto;
@@ -159,32 +220,63 @@ section {
     height: auto;
   }
 
+  .boy-meets-world-cast {
+    margin-top: 20px;
+  }
+
   .grid-7-columns {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 5fr);
+    grid-template-columns: repeat(2, 7fr);
     grid-gap: 10px;
+    margin: 0 auto;
+  }
+
+  .grid-7-columns img {
     margin: 0 auto;
   }
 
   .btn {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    width: 250px;
+  }
+
+  .btn-play {
+    width: 150px;
+  }
+
+  .quote-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .pod-meets-world {
+    display: grid;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   h2 {
+    font-size: 16px;
+  }
+
+  h3 {
     font-size: 14px;
   }
 
   p {
     font-size: 13px;
+  }
+
+  footer {
+    padding: 10px;
   }
 
   .container-fluid {
@@ -198,9 +290,20 @@ section {
     margin: 0 auto;
   }
 
-  section {
-    max-width: 100%;
+  .btn {
+    width: 200px;
+  }
+
+  .btn-play,
+  .btn-pod {
+    width: 130px;
+  }
+
+  .pod-meets-world {
+    display: block;
+  }
+
+  .pod-meets-world img {
     margin: 0 auto;
-    padding: 25px;
   }
 }
