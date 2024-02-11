@@ -6,7 +6,7 @@ const generateQuote = function () {
     },
     {
       quote:
-        'Cory: <i>"It\'s hard to imagine you as a boy. <br /> Did you parents call you Mr. Feeny?"</i>',
+        'Cory: <i>"It\'s hard to imagine you as a boy. <br /> Did your parents call you Mr. Feeny?"</i>',
     },
     {
       quote:
